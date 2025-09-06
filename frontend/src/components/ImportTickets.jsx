@@ -155,9 +155,9 @@ const ImportTickets = () => {
     };
     
     const sampleData = isContractor ? [
-      // 5 Near Expiry Tickets (expiring within 48 hours)
+      // 5 Near Expiry Tickets (expiring within 48 hours) - Contractor Format
       {
-        "ticketNumber": "TKT-2025-001",
+        "ticketNumber": "CTR-2025-001",
         "organization": "My Construction Company",
         "status": "Open",
         "expirationDate": createDate(1), // Tomorrow
@@ -173,7 +173,7 @@ const ImportTickets = () => {
         "notes": "Building renovation project - electrical and plumbing work"
       },
       {
-        "ticketNumber": "TKT-2025-002",
+        "ticketNumber": "CTR-2025-002",
         "organization": "My Construction Company",
         "status": "Open",
         "expirationDate": createDate(2), // Day after tomorrow
@@ -189,7 +189,7 @@ const ImportTickets = () => {
         "notes": "Kitchen remodeling - cabinets and countertops installation"
       },
       {
-        "ticketNumber": "TKT-2025-003",
+        "ticketNumber": "CTR-2025-003",
         "organization": "My Construction Company",
         "status": "Open",
         "expirationDate": createDate(1), // Tomorrow
@@ -205,7 +205,7 @@ const ImportTickets = () => {
         "notes": "Bathroom renovation - tile work and fixtures installation"
       },
       {
-        "ticketNumber": "TKT-2025-004",
+        "ticketNumber": "CTR-2025-004",
         "organization": "My Construction Company",
         "status": "Open",
         "expirationDate": createDate(2), // Day after tomorrow
@@ -221,7 +221,7 @@ const ImportTickets = () => {
         "notes": "Office building renovation - HVAC and electrical systems"
       },
       {
-        "ticketNumber": "TKT-2025-005",
+        "ticketNumber": "CTR-2025-005",
         "organization": "My Construction Company",
         "status": "Open",
         "expirationDate": createDate(1), // Tomorrow
@@ -239,7 +239,7 @@ const ImportTickets = () => {
       
       // 2 Expired Tickets
       {
-        "ticketNumber": "TKT-2025-006",
+        "ticketNumber": "CTR-2025-006",
         "organization": "My Construction Company",
         "status": "Expired",
         "expirationDate": createDate(-5), // 5 days ago
@@ -255,7 +255,7 @@ const ImportTickets = () => {
         "notes": "Pool installation project - completed but ticket expired"
       },
       {
-        "ticketNumber": "TKT-2025-007",
+        "ticketNumber": "CTR-2025-007",
         "organization": "My Construction Company",
         "status": "Expired",
         "expirationDate": createDate(-3), // 3 days ago
@@ -273,7 +273,7 @@ const ImportTickets = () => {
       
       // 5 Normal Tickets (expiring in 7+ days)
       {
-        "ticketNumber": "TKT-2025-008",
+        "ticketNumber": "CTR-2025-008",
         "organization": "My Construction Company",
         "status": "Open",
         "expirationDate": createDate(14), // 2 weeks from now
@@ -289,7 +289,7 @@ const ImportTickets = () => {
         "notes": "Historic building restoration - masonry and window replacement"
       },
       {
-        "ticketNumber": "TKT-2025-009",
+        "ticketNumber": "CTR-2025-009",
         "organization": "My Construction Company",
         "status": "Open",
         "expirationDate": createDate(21), // 3 weeks from now
@@ -305,7 +305,7 @@ const ImportTickets = () => {
         "notes": "New home construction - framing and roofing work"
       },
       {
-        "ticketNumber": "TKT-2025-010",
+        "ticketNumber": "CTR-2025-010",
         "organization": "My Construction Company",
         "status": "Open",
         "expirationDate": createDate(30), // 1 month from now
@@ -321,7 +321,7 @@ const ImportTickets = () => {
         "notes": "Manufacturing facility expansion - concrete and steel work"
       },
       {
-        "ticketNumber": "TKT-2025-011",
+        "ticketNumber": "CTR-2025-011",
         "organization": "My Construction Company",
         "status": "Open",
         "expirationDate": createDate(45), // 6 weeks from now
@@ -337,7 +337,7 @@ const ImportTickets = () => {
         "notes": "Multi-family housing project - foundation and utilities"
       },
       {
-        "ticketNumber": "TKT-2025-012",
+        "ticketNumber": "CTR-2025-012",
         "organization": "My Construction Company",
         "status": "Open",
         "expirationDate": createDate(60), // 2 months from now
@@ -353,9 +353,9 @@ const ImportTickets = () => {
         "notes": "Shopping center renovation - facade and parking lot work"
       }
     ] : [
-      // 5 Near Expiry Tickets (expiring within 48 hours)
+      // 5 Near Expiry Tickets (expiring within 48 hours) - Admin Format
       {
-        "ticketNumber": "TKT-2025-001",
+        "ticketNumber": "ADM-2025-001",
         "organization": "Healthcare Systems Group",
         "status": "Open",
         "expirationDate": createDate(1), // Tomorrow
@@ -371,7 +371,7 @@ const ImportTickets = () => {
         "notes": "Hospital expansion - emergency power and medical gas systems installation"
       },
       {
-        "ticketNumber": "TKT-2025-002",
+        "ticketNumber": "ADM-2025-002",
         "organization": "City Utilities Inc.",
         "status": "Open",
         "expirationDate": createDate(2), // Day after tomorrow
@@ -387,7 +387,7 @@ const ImportTickets = () => {
         "notes": "Underground utility work - water main replacement and gas line installation"
       },
       {
-        "ticketNumber": "TKT-2025-003",
+        "ticketNumber": "ADM-2025-003",
         "organization": "Metro Construction LLC",
         "status": "Open",
         "expirationDate": createDate(1), // Tomorrow
@@ -403,7 +403,7 @@ const ImportTickets = () => {
         "notes": "Factory electrical upgrade - completed ahead of schedule"
       },
       {
-        "ticketNumber": "TKT-2025-004",
+        "ticketNumber": "ADM-2025-004",
         "organization": "State Highway Department",
         "status": "Open",
         "expirationDate": createDate(2), // Day after tomorrow
@@ -419,7 +419,7 @@ const ImportTickets = () => {
         "notes": "Bridge construction - structural steel and concrete work"
       },
       {
-        "ticketNumber": "TKT-2025-005",
+        "ticketNumber": "ADM-2025-005",
         "organization": "Green Energy Solutions",
         "status": "Open",
         "expirationDate": createDate(1), // Tomorrow
@@ -437,7 +437,7 @@ const ImportTickets = () => {
       
       // 2 Expired Tickets
       {
-        "ticketNumber": "TKT-2025-006",
+        "ticketNumber": "ADM-2025-006",
         "organization": "Urban Development Corp",
         "status": "Expired",
         "expirationDate": createDate(-7), // 1 week ago
@@ -453,7 +453,7 @@ const ImportTickets = () => {
         "notes": "High-rise construction - foundation and structural work"
       },
       {
-        "ticketNumber": "TKT-2025-007",
+        "ticketNumber": "ADM-2025-007",
         "organization": "Water Treatment Authority",
         "status": "Expired",
         "expirationDate": createDate(-3), // 3 days ago
@@ -471,7 +471,7 @@ const ImportTickets = () => {
       
       // 5 Normal Tickets (expiring in 7+ days)
       {
-        "ticketNumber": "TKT-2025-008",
+        "ticketNumber": "ADM-2025-008",
         "organization": "Healthcare Systems Group",
         "status": "Open",
         "expirationDate": createDate(14), // 2 weeks from now
@@ -487,7 +487,7 @@ const ImportTickets = () => {
         "notes": "Hospital expansion - emergency power and medical gas systems installation"
       },
       {
-        "ticketNumber": "TKT-2025-009",
+        "ticketNumber": "ADM-2025-009",
         "organization": "City Utilities Inc.",
         "status": "Open",
         "expirationDate": createDate(21), // 3 weeks from now
@@ -503,7 +503,7 @@ const ImportTickets = () => {
         "notes": "Underground utility work - water main replacement and gas line installation"
       },
       {
-        "ticketNumber": "TKT-2025-010",
+        "ticketNumber": "ADM-2025-010",
         "organization": "Metro Construction LLC",
         "status": "Open",
         "expirationDate": createDate(30), // 1 month from now
@@ -519,7 +519,7 @@ const ImportTickets = () => {
         "notes": "Factory electrical upgrade - completed ahead of schedule"
       },
       {
-        "ticketNumber": "TKT-2025-011",
+        "ticketNumber": "ADM-2025-011",
         "organization": "State Highway Department",
         "status": "Open",
         "expirationDate": createDate(45), // 6 weeks from now
@@ -535,7 +535,7 @@ const ImportTickets = () => {
         "notes": "Bridge construction - structural steel and concrete work"
       },
       {
-        "ticketNumber": "TKT-2025-012",
+        "ticketNumber": "ADM-2025-012",
         "organization": "Green Energy Solutions",
         "status": "Open",
         "expirationDate": createDate(60), // 2 months from now
@@ -557,7 +557,7 @@ const ImportTickets = () => {
     const url = URL.createObjectURL(dataBlob);
     const link = document.createElement('a');
     link.href = url;
-    link.download = isContractor ? 'sample-contractor-tickets-import.json' : 'sample-tickets-import.json';
+    link.download = isContractor ? 'sample-contractor-tickets-import.json' : 'sample-admin-tickets-import.json';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

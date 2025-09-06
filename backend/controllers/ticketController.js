@@ -210,7 +210,8 @@ const updateTicket = async (req, res, next) => {
       location,
       notes,
       assignedTo,
-      expirationDate
+      expirationDate,
+      status
     } = req.body;
 
     // If admin is updating assignment, validate the new assignee
@@ -236,6 +237,17 @@ const updateTicket = async (req, res, next) => {
     if (location !== undefined) ticket.location = location;
     if (notes !== undefined) ticket.notes = notes;
     if (expirationDate !== undefined) ticket.expirationDate = new Date(expirationDate);
+    if (status !== undefined) {
+      // Validate status value
+      const validStatuses = ['Open', 'Closed', 'Expired'];
+      if (!validStatuses.includes(status)) {
+        return res.status(400).json({
+          success: false,
+          message: 'Invalid status. Must be one of: Open, Closed, Expired'
+        });
+      }
+      ticket.status = status;
+    }
 
     await ticket.save();
     await ticket.populate('assignedTo', 'firstName lastName email role');

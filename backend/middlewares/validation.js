@@ -298,6 +298,11 @@ const validateTicketUpdate = [
     .isISO8601()
     .withMessage('Expiration date must be a valid ISO 8601 date'),
 
+  body('status')
+    .optional()
+    .isIn(['Open', 'Closed', 'Expired'])
+    .withMessage('Status must be one of: Open, Closed, Expired'),
+
   handleValidationErrors
 ];
 
