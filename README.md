@@ -1,4 +1,4 @@
-# 🚧 Nova811 Ticketing System
+# 🚧 Nov811 Ticketing System
 
 A comprehensive underground utility ticketing management system built with React, Node.js, and MongoDB. This system manages 811 tickets with authentication, expiration tracking, renewals, and automated alerts.
 
