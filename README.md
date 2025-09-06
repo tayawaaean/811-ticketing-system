@@ -93,7 +93,7 @@ A comprehensive underground utility ticketing management system built with React
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/nova811-ticketing-system.git
+   git clone https://github.com/yourusername/811-ticketing-system.git
    cd nova811-ticketing-system
    ```
 
